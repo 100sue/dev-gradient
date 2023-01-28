@@ -21,10 +21,10 @@ Ce projet utilisera Html, CSS, Vanilla Javascript.
  
  
  <br>
- <p align="center">
+
  Essayez aussi "Ma palette" : génerateur de couleurs qui s'accordent bien entre-elles.
   <br>
  - lien :https://100sue.github.io/dev-couleurs/
- </p>
+
 
 
