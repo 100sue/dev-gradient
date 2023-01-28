@@ -9,20 +9,20 @@ let color2Arr = [];
 
 /*fonction generant l'aléatoire des couleurs*/
 
-function rndomColor() {
+function rndColor() {
     const x = Math.round(0xffffff * Math.random()).toString(16);
     const y = 6 - x.length;
     const z = "000000";
     const z1 = z.substring(0, y);
-    const randomColor = "0" + z1 + x;
+    const randomColor = "#" + z1 + x;
     return randomColor;
 
 }
 
 
 for (let i = 0; i < cardAmount; i++) {
-    const color1 = rndomColor();
-    const color2 = rndomColor();
+    const color1 = rndColor();
+    const color2 = rndColor();
 
 color1Arr.push(color1);
 color2Arr.push(color2);
@@ -66,6 +66,7 @@ document.addEventListener("click", (e) => {
 });
 
 /*copy button*/
+
 document.addEventListener("click", (e) => {
     if(e.target && e.target.classList.contains("copy")) {
         const gradient = e.target.parentElement.parentElement.children[1].firstElementChild.style.background;
