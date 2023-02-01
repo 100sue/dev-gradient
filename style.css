@@ -47,6 +47,13 @@ body {
     -webkit-text-stroke: 1px #0f1011;
     font-weight: 900;
     margin-top: 20px;
+    transform: 0.25s;
+}
+
+.title:hover{
+    transform: scale(1.3);
+    color: rgba(255, 255, 255, 0.2);
+    -webkit-text-stroke: 1px white;
 }
 
 p {
